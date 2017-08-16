@@ -17,7 +17,7 @@ RUN gem install rails --version $RAILS_VERSION
 
 WORKDIR $DOCUMENT_ROOT
 
-ADD ./Gemfile* ./
+ADD Gemfile* ./
 
 RUN bundle install
 
