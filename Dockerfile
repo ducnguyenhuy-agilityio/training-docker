@@ -23,9 +23,5 @@ RUN bundle install
 
 COPY . .
 
-# COPY ./bash/docker-entrypoint.sh /usr/local/bin/
-# RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# ENTRYPOINT ["docker-entrypoint.sh"]
-
 EXPOSE 3000
 CMD ["rails","s","-b","0"]
