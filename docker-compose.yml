@@ -5,13 +5,9 @@ web:
     - postgres
   ports:
     - 3000:3000
-  # volumes:
-  #   - ./bundle:/bundle
 postgres:
   image: postgres:alpine
   environment:
     POSTGRES_USER: rails_app
     POSTGRES_PASSWORD: postgres_pass
   container_name: postgres
-  volumes:
-    - ./pgdata:/var/lib/postgresql/data
